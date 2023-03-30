@@ -3,17 +3,27 @@
 .direnv
 .tool-versions
 
-# Ignore generated Gorelease binaries
-dist/
+# Ignore Terraform plugin/module cache and state
+.terraform
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+terraform.tfstate.d
 
-# Ignore Ruby
+# Ignore any local terraform variable assignments
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Ignore local Gemfile lock and bundler config
 .bundle
 Gemfile.lock
 
-# Ignore Terraform state and automatic var files - except examples
-.terraform
-.terraform.lock.hcl
-terraform.tfstate*
-*.auto.tfvars*
-terraform.tfvars*
-!terraform.tfvars.example
+# kitchen-terraform and test results
+.kitchen
+test/ephemeral
+test/reports/*
+!test/reports/.gitkeep
+test/setup/*-ssh*
+test/setup/harness.tfvars
