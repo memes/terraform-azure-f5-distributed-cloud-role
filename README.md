@@ -1,7 +1,9 @@
 # F5 Distributed Cloud Role Terraform module
 
+> **NOTE**: This module is no longer under active maintenance - please use the F5 community supported [modules](https://github.com/terraform-xc-cloud-community-modules) instead.
+
 ![GitHub release](https://img.shields.io/github/v/release/memes/terraform-azure-f5-distributed-cloud-role?sort=semver)
-![Maintenance](https://img.shields.io/maintenance/yes/2023)
+![Maintenance](https://img.shields.io/maintenance/no/2023)
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
 This Terraform module is a helper to create a custom Azure role that has the
